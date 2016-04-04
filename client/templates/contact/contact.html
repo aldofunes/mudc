@@ -1,0 +1,14 @@
+<template name="contact">
+    {{#contentFor region="pageTitle"}}
+        Contact us
+    {{/contentFor}}
+    {{#contentFor region="pageDescription"}}
+        If you have any doubts, comments or suggestions, do not hesitate to get in touch with us.
+    {{/contentFor}}
+
+    <div class="row">
+        <div class="col-md-6 col-md-offset-3">
+            {{> quickForm collection="Contacts" id="contactInsertForm" method="insert"}}
+        </div>
+    </div>
+</template>

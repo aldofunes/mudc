@@ -1,0 +1,45 @@
+<template name="home">
+    <div class="jumbotron text-center">
+        <h1 id="countdown"></h1>
+        <h2>Mexican Universities Debating Championship <small>2015</small></h2>
+        <p>The debating team of Tecnológico de Monterrey Campus Estado de Mexico takes pride in being a debating
+            pioneer in Mexico, from being the first British Parliamentary team in the nation to being hosts of the
+            2014 edition of World Universities Debating Championship in Spanish. With the intent of continuing to
+            enrich our team and the debating culture in Mexico, it is an honour to host the first Mexican Universities
+            Debating Championship.</p>
+        <p><a class="btn btn-primary btn-lg" href="{{pathFor 'tournament'}}" role="button">Learn more &raquo;</a></p>
+    </div>
+
+    <!-- Example row of columns -->
+    <div class="row">
+        <div class="col-md-4">
+            <a class="twitter-timeline" href="https://twitter.com/hashtag/MUDC2015" data-widget-id="651144353029623812">Tweets about #MUDC2015</a>
+        </div>
+        <div class="col-md-4">
+            <h2>Register your institution</h2>
+            <p>To enter this  tournament you will need to fill out the registration form and pay the entering fee</p>
+            <p><a class="btn btn-default btn-block" href="{{pathFor 'registration'}}" role="button">Register &raquo;</a></p>
+        </div>
+        <div class="col-md-4">
+            <h2>Apply for a scholarship</h2>
+            <p>
+                If you believe your institution needs economic support to attend this event, we will gladly review your case.
+            </p>
+            <p><a class="btn btn-default btn-block" href="{{pathFor 'scholarships'}}" role="button">Apply &raquo;</a></p>
+        </div>
+    </div>
+    <br/>
+    <br/>
+    <br/>
+    <div class="row logos text-center">
+        <div class="col-md-4">
+            <img src="/images/itesm-logo.png" alt="Tecnológico de Monterrey"/>
+        </div>
+        <div class="col-md-4">
+            <img src="/images/debate-cem-logo.jpg" alt="Equipo de debate Tec CEM"/>
+        </div>
+        <div class="col-md-4">
+            <img src="/images/amd-logo.jpg" alt="Asociación mexicana de debate"/>
+        </div>
+    </div>
+</template>

@@ -1,0 +1,15 @@
+<template name="scholarships">
+    {{#contentFor region="pageTitle"}}
+        Apply for a scholarship
+    {{/contentFor}}
+    {{#contentFor region="pageDescription"}}
+        Do you think you might require financial aid? Please apply for a scholarship, we will address your petition and
+        be in touch with you as soon as we hage a response.
+    {{/contentFor}}
+
+    <div class="row">
+        <div class="col-md-6 col-md-offset-3">
+            {{> quickForm collection="Scholarships" id="scholarshipInsertForm" method="insert"}}
+        </div>
+    </div>
+</template>

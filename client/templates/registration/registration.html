@@ -1,0 +1,53 @@
+<template name="registration">
+    {{#contentFor region="pageTitle"}}
+        Thank you for registering
+    {{/contentFor}}
+    {{#contentFor region="pageDescription"}}
+        You can manage your registration here. We will be in touch to let you know about next steps.
+    {{/contentFor}}
+    <div class="row">
+        <div class="col-md-4">
+            <h3>Update information</h3>
+
+            <form class="form" id="updateInstitution">
+                <div class="form-group">
+                    <label for="university">Name of the institution</label>
+                    <input type="text" class="form-control" id="university" value="{{currentUser.profile.university}}">
+                </div>
+                <div class="form-group">
+                    <label for="teams">Teams registered</label>
+                    <input type="number" class="form-control" id="teams" value="{{currentUser.profile.teams}}">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email address</label>
+                    <input type="email" class="form-control" id="email" value="{{userEmail}}">
+                </div>
+                <button type="submit" class="btn btn-default btn-block">Update registration</button>
+            </form>
+        </div>
+        <div class="col-md-4">
+            <h3>Payment options</h3>
+            <p>
+                The cost for this championship is $500.00 MXN. Therefore as you have registered
+                {{currentUser.profile.teams}} teams, your institution must pay ${{cost}}.
+            </p>
+            <p>
+                Please let us know when you make the payment so we can confirm your registration. You will receive an
+                email with the confirmation and entry ticket.
+            </p>
+            <p>
+                If you require help with a scholarship for your institution, please apply for one <a href="{{pathFor 'scholarships'}}">here</a>.
+            </p>
+        </div>
+        <div class="col-md-4">
+            <h3>Get ready</h3>
+            <p>
+                Please take the time to read about <a href="{{pathFor 'tournament'}}">the tournament</a> to learn about
+                the format, the prizes and the rules.
+            </p>
+            <p>
+                Remember that practice makes perfect, contact us if you need help organizing practice sessions with your debaters.
+            </p>
+        </div>
+    </div>
+</template>
